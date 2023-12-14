@@ -5,7 +5,7 @@ import {
   screen,
   waitFor,
 } from "@testing-library/react";
-import { ProfileList } from "../../ProfileList/profile-list";
+import { ProfileList } from "../profile-list";
 import { default as axios } from "axios";
 import useGetData from "../../hooks/useGetData";
 import { mockedResults } from "../../data/mock-data";

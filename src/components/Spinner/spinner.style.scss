@@ -1,0 +1,48 @@
+
+@mixin keyframes($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+      @content;
+    }
+    @keyframes #{$animation-name} {
+      @content;
+    }
+  }
+  
+  @mixin animation($str) {
+    -webkit-animation: #{$str};
+    animation: #{$str};
+  }
+  
+  @include keyframes(fade) {
+    0% {
+     transform:rotate(0deg)
+    }
+    100% {
+        transform:rotate(360deg)
+       }
+  }
+
+.spinner{
+    &__container{
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border: 3px solid blue;
+        border-radius: 50%;
+        border-top-color: #fff;
+        @include animation('fade 5s infinite');
+        position: absolute;
+        right: 50%;
+        top: 50%;
+        
+    }
+        &__inner{
+
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+}
+  

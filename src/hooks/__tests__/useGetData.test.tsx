@@ -1,6 +1,6 @@
 import { renderHook, waitFor } from "@testing-library/react";
 import { default as axios } from "axios";
-import useGetData from "../../hooks/useGetData";
+import useGetData from "../useGetData";
 
 jest.mock("axios");
 

@@ -3,8 +3,9 @@ import useGetData from "../hooks/useGetData";
 import { Result } from "../types/profiles.type";
 import { ProfileItem } from "../ProfileItem/profile-item";
 import "./profile-list.style.scss";
-import { Spinner } from "../components/Spinner";
+
 import { Header } from "../components/Header";
+import { Spinner } from "../components/Spinner/Spinner";
 
 export const ProfileList: React.FC = () => {
   const [profileCountToFetch, setProfileCountToFetch] = useState<number>(0);
