@@ -5,10 +5,11 @@ import {
   screen,
   waitFor,
 } from "@testing-library/react";
-import { ProfileList } from "../profile-list";
+
 import { default as axios } from "axios";
 import useGetData from "../../hooks/useGetData";
 import { mockedResults } from "../../data/mock-data";
+import { ProfileList } from "../../ProfileList/profile-list";
 jest.mock("axios");
 
 beforeEach(() => {

@@ -1,6 +1,7 @@
 import { fireEvent, render, screen } from "@testing-library/react";
-import { ProfileItem } from "../../ProfileItem/profile-item";
+
 import { mockedResults } from "../../data/mock-data";
+import { ProfileItem } from "../../ProfileItem/profile-item";
 
 afterEach(() => {
   jest.restoreAllMocks();

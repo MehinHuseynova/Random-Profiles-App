@@ -47,7 +47,10 @@
   "jest": {
     "transformIgnorePatterns": [
       "node_modules/(?!axios)"
-    ]
+    ],
+    "testMatch": [ "<rootDir>/src/__tests__/**/*.test.tsx" ]
+   
+  
    
   },
   "devDependencies": {
