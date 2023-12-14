@@ -1,0 +1,47 @@
+$medium: 900px;
+
+.profileItem {
+    &__container {
+        border: 1px solid gray;
+        border-radius: 8px;
+        padding: 10px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        ;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        &:hover {
+            background-color: azure;
+            transition: 500ms all;
+            cursor: pointer;
+        }
+
+        img {
+            border-radius: 8px;
+            margin: 18px;
+        }
+    }
+
+    &__content {
+        @media screen and (min-width: $medium) {
+            display: flex;
+        }
+    }
+
+    &__btnGroup {
+        display: flex;
+        justify-content: flex-end;
+
+        button {
+            background-color: rgb(139, 4, 4);
+            margin-right: 10px;
+
+            &:hover {
+                background-color: rgb(210, 49, 49);
+            }
+
+        }
+    }
+}
